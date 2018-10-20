@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<title>Блог KARLMENNY.com | Мода, тренды, советы стилистов, новости и конкурсы — KARLMENNY.com знает все!</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- INDEX CSS ======================================================================-->
+	<link rel="stylesheet" href="css/index_styles.css">
+	<link rel="stylesheet" href="css/blog.css">
+	
+	<!-- JS =============================================================================-->
+	<!--DROPDOWN MENU-->
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/common.js"></script>
+	<!--BACK TO TOP-->
+	<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+	
+	<script type='text/javascript'>
+		$(function(){
+		  $.fn.scrollToTop=function(){
+			$(this).hide().removeAttr("href");
+			if($(window).scrollTop()!="0"){
+				$(this).fadeIn("slow")
+		  }
+		  var scrollDiv=$(this);
+		  $(window).scroll(function(){
+			if($(window).scrollTop()=="0"){
+			$(scrollDiv).fadeOut("slow")
+			}else{
+			$(scrollDiv).fadeIn("slow")
+		  }
+		  });
+			$(this).click(function(){
+			  $("html, body").animate({scrollTop:0},"slow")
+			})
+		  }
+		});
+		$(function() {$("#toTop").scrollToTop();});
+	</script>
+	
+	<!-- Google Analytics  -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-78882673-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37805310 = new Ya.Metrika({ id:37805310, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+	</script>
+	
+</head>
+
+<body>		
+		<div class="page">
+			<!--START OF HEADER-->
+			<div class="header-container">
+				<div class="quick-access">
+					<div class="topBar">
+						<a href="#" class="freeReturn"><span>Бесплатная доставка и возврат</span></a>
+						<a href="#" class="delivery4"><span>Доставка из Европы за 4 дня</span></a>
+						<a href="#" class="firstBuy"><span>Дарим на первую покупку</span></a>
+						<a href="#" class="diskont"><span>Скидки до 50%</span></a>
+					</div>
+					<iframe class="index_frame_2" src="index_frame_2.html"></iframe>
+					
+				</div>
+				<div class="header">	
+					<ul id="logo">
+						<li>
+							<div style="border-right: 1px solid #BCA474; border-bottom: 1px solid #BCA474">
+								<div class="infoBox contact">
+									<h4>0 (800) 534 241</h4>
+									<p>Бесплатная горячая линия (24/7)</p>
+								</div>
+							</div>
+							<div style="border-right: 1px solid #BCA474">
+								<div class="infoBox email">
+									<h4 class="email_h4">Контактный e-mail</h4>
+										<p>Ваши пожелания на<a href="#"> ok@karlmenny.сom</a></p>
+								</div>
+							</div> 
+						</li>
+						<li><a href="index.html" class="back_to_main"></a></li>
+						<li>
+							<div style="border-left: 1px solid #BCA474; border-bottom: 1px solid #BCA474">
+								<div class="infoBox send">
+									<h4>Отправка завтра</h4>
+									<p data-label="завтра" data-next-shipp="2016-04-22T07:00:00+02:00" class="deliveryInfo">Ближайшая отправка через<a href="/shipping-a/okno.html" data-text-days="д." data-text-hours="ч." data-text-minutes="мин."> 16 ч. 50 мин.</a></p>
+								</div>		
+							</div>
+							<div style="border-left: 1px solid #BCA474">
+								<div class="infoBox delivery">
+									<h4>Бесплатная доставка</h4>
+									<p>При заказе на сумму 750 грн и более</p>
+								</div>	
+							</div>
+						</li>
+					</ul>
+					
+				</div>
+				<div id="mainPanelWrap">
+					<ul id="mainPanel" class="clearfix">
+						<li id="panelLogin"><a href="login.html"><span>Войти</span></a></li>
+						<li id="panelSave"><a href="#"><span>Элитный</span></a></li>
+						<li id="panelCart"><a href="#" class="miniBasket"><span>Корзина</span></a></li>
+						<li id="panelClub"><a href="#"><span>K&M Club</span></a></li>
+						<li id="panelSearch"><a href="#"><span>Искать</span></a></li>
+					</ul>
+				</div>
+				<div id="navContainer">
+					<nav class="mainNavigation">
+						<div class="level-1">
+							<ul>
+								<li><a href="#">Sale</a></li>
+								<li class="delimeter"></li>
+								<!-- МУЖЧИНАМ -->								
+								<li><a href="#">Мужчинам</a>
+									<div class="level-2 men">
+										<ul class="sideNavigation">
+												<li><a href="#">Одежда</a></li>
+												<li><a href="#">Обувь</a></li>
+												<li><a href="#">Аксессуары</a></li>
+												<li><a href="#">Бренды</a></li>
+										</ul>								
+										<div class="level-3">
+											<div class="title">
+												<div>Одежда</div>
+												<ul>
+													<li><a href="bruki.html">Брюки</a></li>
+													<li><a href="#">Джинсы</a></li>
+													<li><a href="#">Кофты</a></li>
+													<li><a href="#">Куртки и пальто</a></li>
+													<li><a href="#">Нижнее белье</a></li>
+													<li><a href="#">Носки</a></li>
+													<li><a href="#">Пиджаки и костюмы</a></li>
+													<li><a href="#">Рубашки</a></li>
+													<li><a href="#">Свитеры</a></li>
+													<li><a href="#">Сноуборд</a></li>
+													<li><a href="#">Футболки, майки и поло</a></li>
+													<li><a href="#">Шорты</a></li>
+												</ul>
+											</div>
+											<div class="title">
+												<div>Рекомендуемые</div>
+												<ul>
+													<li><a href="#">Джинсы и деним 2016</a></li>
+													<li><a href="#">Tommy Hilfiger</a></li>
+													<li><a href="#">Обувь со скидками до -70%</a></li>
+													<li><a href="#">Спорт & фитнес</a></li>
+													<li><a href="#">Премиум-sale до -70%</a></li>
+													<li><a href="#">Лыжи & сноуборд</a></li>
+													<li><a href="#">Распродажа до -70%</a></li>
+													<li><a href="#">Новинки Весна-Лето 2016</a></li>
+												</ul>
+											</div>
+											<div class="clothes_man"></div>
+										</div>
+										<div class="level-3">
+											<div class="title">
+												<div>Обувь</div>
+												<ul>
+													<li><a href="#">Outdoor</a></li>
+													<li><a href="#">Высокие ботинки</a></li>
+													<li><a href="#">Кеды и тенниски</a></li>
+													<li><a href="#">Кроссовки</a></li>
+													<li><a href="#">Туфли и мокасины</a></li>
+													<li><a href="#">Уход за обувью</a></li>
+													<li><a href="#">Шлепанцы и сандали</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin-left: 13px;">
+												<div>Рекомендуемые</div>
+												<ul>
+													<li><a href="#">Джинсы и деним 2016</a></li>
+													<li><a href="#">Tommy Hilfiger</a></li>
+													<li><a href="#">Обувь со скидками до -70%</a></li>
+													<li><a href="#">Спорт & фитнес</a></li>
+													<li><a href="#">Премиум-sale до -70%</a></li>
+													<li><a href="#">Лыжи & сноуборд</a></li>
+													<li><a href="#">Распродажа до -70%</a></li>
+													<li><a href="#">Новинки Весна-Лето 2016</a></li>
+												</ul>
+											</div>
+											<div class="shoes_man"></div>
+										</div>
+										<div class="level-3">
+											<div class="title">
+												<div>Аксессуары</div>
+												<ul>
+													<li><a href="#">Гаджеты и аксессуары</a></li>
+													<li><a href="#">Галстуки и бабочки</a></li>
+													<li><a href="#">Кошельки</a></li>
+													<li><a href="#">Наушники</a></li>
+													<li><a href="#">Очки</a></li>
+													<li><a href="#">Перчатки</a></li>
+													<li><a href="#">Ремни</a></li>
+													<li><a href="#">Рюкзаки</a></li>
+													<li><a href="#">Сумки и чемоданы</a></li>
+													<li><a href="#">Часы</a></li>
+													<li><a href="#">Шапки и шляпы</a></li>
+													<li><a href="#">Шарфы и платки</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin-left: 7px;">
+												<div>Рекомендуемые</div>
+												<ul>
+													<li><a href="#">Джинсы и деним 2016</a></li>
+													<li><a href="#">Tommy Hilfiger</a></li>
+													<li><a href="#">Обувь со скидками до -70%</a></li>
+													<li><a href="#">Спорт & фитнес</a></li>
+													<li><a href="#">Премиум-sale до -70%</a></li>
+													<li><a href="#">Лыжи & сноуборд</a></li>
+													<li><a href="#">Распродажа до -70%</a></li>
+													<li><a href="#">Новинки Весна-Лето 2016</a></li>
+												</ul>
+											</div>
+											<div class="accessories_man"></div>
+										</div>
+										<div class="level-3">
+											<div class="title">
+												<div>Бренды</div>
+												<ul>
+													<li><a href="#">Adidas Originals</a></li>
+													<li><a href="#">Alcott</a></li>
+													<li><a href="#">Answear</a></li>
+													<li><a href="#">Broadway</a></li>
+													<li><a href="#">Bugatti</a></li>
+													<li><a href="#">Camel Active</a></li>
+													<li><a href="#">Diesel</a></li>
+													<li><a href="#">Gino Rossi</a></li>
+													<li><a href="#">Guess Jeans</a></li>
+													<li><a href="#">Hilfiger Denim</a></li>
+													<li><a href="#">Jack & Jones</a></li>
+													<li><a href="#">Lee Cooper</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin: 51px 0 0 50px;">
+												<ul>
+													<li><a href="#">Medicine</a></li>
+													<li><a href="#">Nixon</a></li>
+													<li><a href="#">Pepe Jeans</a></li>
+													<li><a href="#">Quiksilver</a></li>
+													<li><a href="#">Scotch & Soda</a></li>
+													<li><a href="#">Selected</a></li>
+													<li><a href="#">Tom Tailor Denim</a></li>
+													<li><a href="#">Tommy Hilfiger</a></li>
+													<li><a href="#">Vans</a></li>
+												</ul>
+											</div>
+											<div class="brands"></div>
+										</div>
+									</div>	
+								</li>
+								<li class="delimeter"></li>
+								<!-- ДЕТЯМ -->	
+								<li><a href="#">Детям</a>
+									<div class="level-2 children">
+										<ul class="sideNavigation">
+												<li><a href="#">Девочка</a></li>
+												<li><a href="#">Мальчик</a></li>
+												<li><a href="#">Бренды</a></li>
+										</ul>								
+										<div class="level-3">
+											<div class="title">
+												<div>Одежда</div>
+												<ul>
+													<li><a href="#">Блузки и рубашки</a></li>
+													<li><a href="#">Брюки и леггинсы</a></li>
+													<li><a href="#">Джинсы</a></li>
+													<li><a href="#">Жакеты</a></li>
+													<li><a href="#">Колготки и носки</a></li>
+													<li><a href="#">Комбинезоны</a></li>
+													<li><a href="#">Кофты</a></li>
+													<li><a href="#">Купальники</a></li>
+													<li><a href="#">Куртки, пальто и плащи</a></li>
+													<li><a href="#">Нижнее белье</a></li>
+													<li><a href="#">Платья и туники</a></li>
+													<li><a href="#">Свитеры</a></li>
+													<li><a href="#">Сноуборд</a></li>
+													<li><a href="#">Спортивные костюмы</a></li>
+													<li><a href="#">Футболки и майки</a></li>
+													<li><a href="#">Шорты</a></li>
+													<li><a href="#">Юбки</a></li>
+												</ul>
+											</div>
+											<div class="title">
+												<div>Обувь</div>
+												<ul>
+													<li><a href="#">Балетки</a></li>
+													<li><a href="#">Кеды и тенниски</a></li>
+													<li><a href="#">Кроссовки</a></li>
+													<li><a href="#">Мокасины и полуботинки</a></li>
+													<li><a href="#">Резиновые сапоги</a></li>
+													<li><a href="#">Сапоги и ботинки</a></li>
+													<li><a href="#">Шлепанцы и босоножки</a></li>
+												</ul>
+											</div>
+											<div class="title">
+												<div>Аксессуары</div>
+												<ul>
+													<li><a href="#">Бижутерия</a></li>
+													<li><a href="#">Гаджеты и аксессуары</a></li>
+													<li><a href="#">Перчатки</a></li>
+													<li><a href="#">Ремни</a></li>
+													<li><a href="#">Рюкзаки</a></li>
+													<li><a href="#">Сумки и чемоданы</a></li>
+													<li><a href="#">Сумочки</a></li>
+													<li><a href="#">Шапки и шляпы</a></li>
+													<li><a href="#">Шарфы и платки</a></li>
+												</ul>
+											</div>
+											<div class="girl"></div>
+										</div>
+										
+										<div class="level-3">
+											<div class="title">
+												<div>Одежда</div>
+												<ul>
+													<li><a href="#">Брюки</a></li>
+													<li><a href="#">Джинсы</a></li>
+													<li><a href="#">Колготки и носки</a></li>
+													<li><a href="#">Кофты</a></li>
+													<li><a href="#">Куртки и пальто и плащи</a></li>
+													<li><a href="#">Нижнее белье</a></li>
+													<li><a href="#">Пиджаки и костюмы</a></li>
+													<li><a href="#">Рубашки</a></li>
+													<li><a href="#">Свитеры</a></li>
+													<li><a href="#">Сноуборд</a></li>
+													<li><a href="#">Футболки, майки и поло</a></li>
+													<li><a href="#">Шорты</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin-left: -7px;">
+												<div>Обувь</div>
+												<ul>
+													<li><a href="#">Высокие ботинки</a></li>
+													<li><a href="#">Кеды и тенниски</a></li>
+													<li><a href="#">Кроссовки</a></li>
+													<li><a href="#">Резиновые сапоги</a></li>
+													<li><a href="#">Сапоги и ботинки</a></li>
+													<li><a href="#">Туфли и мокасины</a></li>
+													<li><a href="#">Шлепанцы и сандали</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin-left: 20px;">
+												<div>Аксессуары</div>
+												<ul>
+													<li><a href="#">Гаджеты и аксессуары</a></li>
+													<li><a href="#">Галстуки и бабочки</a></li>	
+													<li><a href="#">Перчатки</a></li>
+													<li><a href="#">Ремни</a></li>
+													<li><a href="#">Рюкзаки</a></li>
+													<li><a href="#">Сумки и чемоданы</a></li>
+													<li><a href="#">Шапки и шляпы</a></li>
+													<li><a href="#">Шарфы и платки</a></li>
+												</ul>
+											</div>
+											<div class="boy"></div>
+										</div>
+										
+										<div class="level-3">
+											<div class="title">
+												<div>Бренды</div>
+												<ul>
+													<li><a href="#">3pommes</a></li>
+													<li><a href="#">Adidas Originals</a></li>
+													<li><a href="#">Adidas Performance</a></li>
+													<li><a href="#">American CLUB</a></li>
+													<li><a href="#">Bartek</a></li>
+													<li><a href="#">BB Harmony</a></li>
+													<li><a href="#">Befado</a></li>
+													<li><a href="#">Blu Seven</a></li>
+													<li><a href="#">Cerda</a></li>
+													<li><a href="#">Cienta</a></li>
+													<li><a href="#">Crocs</a></li>
+													<li><a href="#">Endo</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin: 51px 0 0 20px;">							
+												<ul>
+													<li><a href="#">Geox</a></li>
+													<li><a href="#">Gino rossi</a></li>
+													<li><a href="#">Gioseppo</a></li>
+													<li><a href="#">GIRANDOLA</a></li>
+													<li><a href="#">HASBY</a></li>
+													<li><a href="#">Jamiks</a></li>
+													<li><a href="#">Kaan</a></li>
+													<li><a href="#">Keen</a></li>
+													<li><a href="#">Leomil</a></li>
+													<li><a href="#">Little Pieces</a></li>
+													<li><a href="#">Mango Kids</a></li>
+													<li><a href="#">Mi-Pac</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin: 51px 0 0 20px;">		
+												<ul>
+													<li><a href="#">Name it</a></li>
+													<li><a href="#">Nazo</a></li>
+													<li><a href="#">New Balance</a></li>
+													<li><a href="#">Pepe Jeans</a></li>
+													<li><a href="#">PERLETTI</a></li>
+													<li><a href="#">Playshoes</a></li>
+													<li><a href="#">Primigi</a></li>
+													<li><a href="#">Quiksilver</a></li>
+													<li><a href="#">Reebok</a></li>
+													<li><a href="#">Skechers</a></li>
+													<li><a href="#">Sorel</a></li>
+													<li><a href="#">Tape a Loeil</a></li>
+												</ul>
+											</div>
+											<div class="brands_children"></div>
+										</div>
+									</div>
+								</li>
+								<li class="delimeter"></li>
+								
+								<!-- ЖЕНЩИНАМ -->								
+								<li><a href="#">Женщинам</a>
+									<div class="level-2 women">
+										<ul class="sideNavigation">
+												<li><a href="#">Одежда</a></li>
+												<li><a href="#">Обувь</a></li>
+												<li><a href="#">Аксессуары</a></li>
+												<li><a href="#">Бренды</a></li>
+										</ul>								
+										<div class="level-3">
+											<div class="title">
+												<div>Одежда</div>
+												<ul>
+													<li><a href="#">Блузки и рубашки</a></li>
+													<li><a href="#">Брюки и леггинсы</a></li>
+													<li><a href="#">Джинсы</a></li>
+													<li><a href="#">Комбинезоны</a></li>
+													<li><a href="#">Кофты</a></li>
+													<li><a href="#">Купальники</a></li>
+													<li><a href="#">Куртки, пальто и плащи</a></li>
+													<li><a href="#">Лыжные костюмы</a></li>
+													<li><a href="#">Нижнее белье</a></li>
+													<li><a href="#">Носки, чулки и колготки</a></li>
+													<li><a href="#">Пиджаки и жилеты</a></li>
+													<li><a href="#">Платья и туники</a></li>
+													<li><a href="#">Свитеры и кардиганы</a></li>
+													<li><a href="#">Футболки и майки</a></li>
+													<li><a href="#">Шорты</a></li>
+													<li><a href="#">Юбки</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin-left: 9px;">
+												<div>Рекомендуемые</div>
+												<ul>
+													<li><a href="#">Обувь со скидками до -70%</a></li>
+													<li><a href="#">Премиум-sale до -70%</a></li>
+													<li><a href="#">Для детей</a></li>
+													<li><a href="#">MANGO до -70%</a></li>
+													<li><a href="#">Спорт & фитнес</a></li>
+													<li><a href="#">Джинсы и деним 2016</a></li>
+													<li><a href="#">Распродажа до -70%</a></li>
+													<li><a href="#">Новинки Весна-Лето 2016</a></li>
+													<li><a href="#">Лыжи & сноуборд</a></li>
+													<li><a href="#">Нижнее белье</a></li>
+												</ul>
+											</div>
+											<div class="clothes_woman"></div>
+										</div>
+										
+										<div class="level-3">
+											<div class="title">
+												<div>Обувь</div>
+												<ul>
+													<li><a href="#">Outdoor</a></li>
+													<li><a href="#">Балетки</a></li>
+													<li><a href="#">Кеды и тенниски</a></li>
+													<li><a href="#">Кроссовки</a></li>
+													<li><a href="#">Мокасины и полуботинки</a></li>
+													<li><a href="#">Резиновые сапоги</a></li>
+													<li><a href="#">Сапоги и ботинки</a></li>
+													<li><a href="#">Туфли и босоножки</a></li>
+													<li><a href="#">Уход за обувью</a></li>
+													<li><a href="#">Шлепанцы и сандали</a></li>
+												</ul>
+											</div>
+											<div class="title">
+												<div>Рекомендуемые</div>
+												<ul>
+													<li><a href="#">Обувь со скидками до -70%</a></li>
+													<li><a href="#">Премиум-sale до -70%</a></li>
+													<li><a href="#">Для детей</a></li>
+													<li><a href="#">MANGO до -70%</a></li>
+													<li><a href="#">Спорт & фитнес</a></li>
+													<li><a href="#">Джинсы и деним 2016</a></li>
+													<li><a href="#">Распродажа до -70%</a></li>
+													<li><a href="#">Новинки Весна-Лето 2016</a></li>
+													<li><a href="#">Лыжи & сноуборд</a></li>
+													<li><a href="#">Нижнее белье</a></li>
+												</ul>
+											</div>
+											<div class="shoes_woman"></div>
+										</div>
+										
+										<div class="level-3">
+											<div class="title">
+												<div>Аксессуары</div>
+												<ul>
+													<li><a href="#">Бижутерия</a></li>
+													<li><a href="#">Гаджеты и аксессуары</a></li>
+													<li><a href="#">Зонты</a></li>
+													<li><a href="#">Кошельки</a></li>
+													<li><a href="#">Наушники</a></li>
+													<li><a href="#">Очки</a></li>
+													<li><a href="#">Перчатки</a></li>
+													<li><a href="#">Ремни</a></li>
+													<li><a href="#">Рюкзаки</a></li>
+													<li><a href="#">Сумки и чемоданы</a></li>
+													<li><a href="#">Сумочки</a></li>
+													<li><a href="#">Часы</a></li>
+													<li><a href="#">Шапки и шляпы</a></li>
+													<li><a href="#">Шарфы и платки</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin-left: 14px;">
+												<div>Рекомендуемые</div>
+												<ul>
+													<li><a href="#">Обувь со скидками до -70%</a></li>
+													<li><a href="#">Премиум-sale до -70%</a></li>
+													<li><a href="#">Для детей</a></li>
+													<li><a href="#">MANGO до -70%</a></li>
+													<li><a href="#">Спорт & фитнес</a></li>
+													<li><a href="#">Джинсы и деним 2016</a></li>
+													<li><a href="#">Распродажа до -70%</a></li>
+													<li><a href="#">Новинки Весна-Лето 2016</a></li>
+													<li><a href="#">Лыжи & сноуборд</a></li>
+													<li><a href="#">Нижнее белье</a></li>
+												</ul>
+											</div>
+											<div class="accessories_woman"></div>
+										</div>
+										
+										<div class="level-3">
+											<div class="title">
+												<div>Бренды</div>
+												<ul>
+													<li><a href="#">Adidas Originals</a></li>
+													<li><a href="#">Answear</a></li>
+													<li><a href="#">Blink</a></li>
+													<li><a href="#">Broadway</a></li>
+													<li><a href="#">Clarks</a></li>
+													<li><a href="#">Desigual</a></li>
+													<li><a href="#">Diesel</a></li>
+													<li><a href="#">Ecco</a></li>
+													<li><a href="#">Gatta</a></li>
+													<li><a href="#">Gino Rossi</a></li>
+													<li><a href="#">Guess Jeans</a></li>
+													<li><a href="#">Hilfiger Denim</a></li>
+													<li><a href="#">Maison Scotch</a></li>
+												</ul>
+											</div>
+											<div class="title" style="margin: 51px 0 0 65px;">
+												<ul>
+													<li><a href="#">Mango</a></li>
+													<li><a href="#">Medicine</a></li>
+													<li><a href="#">Melissa</a></li>
+													<li><a href="#">Only</a></li>
+													<li><a href="#">Pepe Jeans</a></li>
+													<li><a href="#">Roxy</a></li>
+													<li><a href="#">Simple</a></li>
+													<li><a href="#">Skechers</a></li>
+													<li><a href="#">Tommy Hilfiger</a></li>
+													<li><a href="#">Vans</a></li>
+													<li><a href="#">Vero Moda</a></li>
+												</ul>
+											</div>
+											<div class="brands"></div>
+										</div>
+									</div>
+								</li>
+								<li class="delimeter"></li>
+								<li><a href="#">Блог</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>	
+			</div>
+			<!--END OF HEADER-->
+			<iframe class="index_frame_3" src="index_frame_3.html"></iframe>
+			
+			
+			<!--START OF MAIN CONTENT-->
+			<div class="main-container">	
+				<div id="contentBar">
+					<div id="breadcrumbsWrap">
+						<ul id="breadcrumbs">
+							<li><a href="index.html">Главная страница</a></li>
+							<li><h1>Блог</h1></li>
+						</ul>
+					</div>	
+				</div>
+				
+				<div id="widget_area">
+					<div class="nav_menu">
+						<ul>
+							<li><a href="#">Тренды</a></li>
+							<li><a href="#">Get the look</a></li>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Вдохновение</a></li>
+							<li><a href="#">Блогеры</a></li>
+							<li><a href="#">Знаменитости</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Конкурсы</a></li>
+						</ul>
+					</div>
+					<h4 class="widget-title">Следите<br> за модой!</h4>
+					<div class="textwidget">
+						<form>
+							<input class="freshmail_email" type="text" placeholder="Введите здесь свой e-mail">
+							<input class="but" value="Подписаться" type="submit">
+						</form>
+					</div>
+				</div>
+				<div id="articles">
+					<div style="padding-bottom: 40px; border-bottom: 1px solid rgba(0,0,0,0.1);">
+						<h1>#Lovers To Lovers: Notes for men. Shirt by MANGO</h1>
+						<div class="breadcrumbs"><span style="text-decoration: underline;">МЕНЮ</span> <span class="shot">/</span> <span style="text-decoration: underline;">БЛОГЕРЫ</span></div> 
+						<div class="panel">
+							<a href="https://www.facebook.com" onclick="window.open(this.href, '', 'scrollbars=1,height='+Math.min(800, screen.availHeight)+',width='+Math.min(1200, screen.availWidth)); return false;"><div class="icon"></div><span>Нравится</span></a>
+							<div class="counter" style="margin-right: 10px;"><span>0</span></div>
+							<a href="https://twitter.com" onclick="window.open(this.href, '', 'scrollbars=1,height='+Math.min(600, screen.availHeight)+',width='+Math.min(900, screen.availWidth)); return false;"><div class="icon tw"></div><span>Твитнуть</span></a>
+							<div class="counter" style="margin-right: 10px;"><span>0</span></div>
+							<a href="https://plus.google.com/u/0/" class="google" onclick="window.open(this.href, '', 'scrollbars=1,height='+Math.min(600, screen.availHeight)+',width='+Math.min(900, screen.availWidth)); return false;"><span style="color: #db4437">G + 1</span></a>
+							<div class="counter" style="margin-right: 10px;"><span>0</span></div>
+							<a href="#" class="button" style="margin-right: 5px;"><img src="images/blog/print.png" alt="Статью в печать" title="Статью в печать"></a>
+							<a href="#" class="button" style="margin-right: 5px;"><img src="images/blog/to_pdf.png" alt="Статью в документ pdf" title="Статью в документ pdf"></a>
+							<a href="#" class="button" style="margin-right: 5px;"><img src="images/blog/email.png" alt="Поделиться статьей" title="Поделиться статьей"></a>
+							
+						</div>
+						<div class="picture"></div>	
+						<p class="caption"><em>Дополнительная скидка 25% на рубашки при покупке мин. 2 штук до 01.06.16 <a href="#">здесь >></a>.<br>Ваш промокод: 160528</em></p>
+						<p class="text"><em>Мужская <a href="#">рубашка в клетку</a></em> — важный и один из основных элементом базового <em><a href="#">мужского</a></em> гардероба.<br>
+						Как  <em>стильный <a href="#">элемент одежды</a></em>, впервые появилась в <em>шестидесятых годах</em> прошлого века, когда весь мир покорили идеи хиппи и творчества <b>Битлз</b>. В <em>девяностые годы</em> такая рубашка относилась к стилю <em>гранж</em>. После пика популярности, наступил небольшой спад. Некоторый период такая рубашка считалась признаком безвкусия.</p>
+						<p class="detail"><a href="blog_article_1.html#anchor">ДЕТАЛЬНЕЕ ></a></p>
+						<p class="author">Автор: <a href="#"><b>Lovers To Lovers для KARLMENNY.com</b></a></p>
+					</div>
+					<div style="padding: 40px 0 40px 0; border-bottom: 1px solid rgba(0,0,0,0.1);">
+						<h1>#GILOCHKA: Частичка счастья!</h1>
+						<div class="breadcrumbs"><span style="text-decoration: underline;">МЕНЮ</span> <span class="shot">/</span> <span style="text-decoration: underline;">БЛОГЕРЫ</span></div> 
+						<div class="panel">
+							<a href="https://www.facebook.com" onclick="window.open(this.href, '', 'scrollbars=1,height='+Math.min(800, screen.availHeight)+',width='+Math.min(1200, screen.availWidth)); return false;"><div class="icon"></div><span>Нравится</span></a>
+							<div class="counter" style="margin-right: 10px;"><span>0</span></div>
+							<a href="https://twitter.com" onclick="window.open(this.href, '', 'scrollbars=1,height='+Math.min(600, screen.availHeight)+',width='+Math.min(900, screen.availWidth)); return false;"><div class="icon tw"></div><span>Твитнуть</span></a>
+							<div class="counter" style="margin-right: 10px;"><span>0</span></div>
+							<a href="https://plus.google.com/u/0/" class="google" onclick="window.open(this.href, '', 'scrollbars=1,height='+Math.min(600, screen.availHeight)+',width='+Math.min(900, screen.availWidth)); return false;"><span style="color: #db4437">G + 1</span></a>
+							<div class="counter" style="margin-right: 10px;"><span>0</span></div>
+							<a href="#" class="button" style="margin-right: 5px;"><img src="images/blog/print.png" alt="Статью в печать" title="Статью в печать"></a>
+							<a href="#" class="button" style="margin-right: 5px;"><img src="images/blog/to_pdf.png" alt="Статью в документ pdf" title="Статью в документ pdf"></a>
+							<a href="#" class="button" style="margin-right: 5px;"><img src="images/blog/email.png" alt="Поделиться статьей" title="Поделиться статьей"></a>
+						</div>
+						<div class="picture picture_2"></div>	
+						<p class="text" style="margin-top: 20px;">Больше всего в блоге мне нравится делать <b>атмосферные фото</b>, будь-то на <em>море</em> или на <em>речке</em> в <em>деревне</em>, на <em>морском песке</em> или <em>зеленой траве…</em> <b>во всем есть своя прелесть!</b> Что бы найти красоту вокруг себя не надо далеко ехать, лететь через океан или мечтать о неизведанном, хотя и это не помешает;), просто слови лучик солнца, подумай о хорошем и как от волшебной палочки все вокруг станет прекрасным! В этот раз было много <em>зелени</em>, <b>украинские «краєвиди»</b> и <em>летящие одуванчики. Лови частичку счастья от меня и передай другому!</em></p>
+						<p class="detail"><a href="#">ДЕТАЛЬНЕЕ ></a></p>
+						<p class="author">Автор: <a href="#"><b>Olena Gilka для KARLMENNY.com</b></a></p>
+					</div>
+					<div style="padding: 40px 0 40px 0; border-bottom: 1px solid rgba(0,0,0,0.1);">
+						<h1>#Lovers To Lovers: Як правильно пiдiбрати окуляри?</h1>
+						<div class="breadcrumbs"><span style="text-decoration: underline;">МЕНЮ</span> <span class="shot">/</span> <span style="text-decoration: underline;">БЛОГЕРЫ</span></div> 
+						<div class="panel">
+							<a href="https://www.facebook.com" onclick="window.open(this.href, '', 'scrollbars=1,height='+Math.min(800, screen.availHeight)+',width='+Math.min(1200, screen.availWidth)); return false;"><div class="icon"></div><span>Нравится</span></a>
+							<div class="counter" style="margin-right: 10px;"><span>0</span></div>
+							<a href="https://twitter.com" onclick="window.open(this.href, '', 'scrollbars=1,height='+Math.min(600, screen.availHeight)+',width='+Math.min(900, screen.availWidth)); return false;"><div class="icon tw"></div><span>Твитнуть</span></a>
+							<div class="counter" style="margin-right: 10px;"><span>0</span></div>
+							<a href="https://plus.google.com/u/0/" class="google" onclick="window.open(this.href, '', 'scrollbars=1,height='+Math.min(600, screen.availHeight)+',width='+Math.min(900, screen.availWidth)); return false;"><span style="color: #db4437">G + 1</span></a>
+							<div class="counter" style="margin-right: 10px;"><span>0</span></div>
+							<a href="#" class="button" style="margin-right: 5px;"><img src="images/blog/print.png" alt="Статью в печать" title="Статью в печать"></a>
+							<a href="#" class="button" style="margin-right: 5px;"><img src="images/blog/to_pdf.png" alt="Статью в документ pdf" title="Статью в документ pdf"></a>
+							<a href="#" class="button" style="margin-right: 5px;"><img src="images/blog/email.png" alt="Поделиться статьей" title="Поделиться статьей"></a>
+						</div>
+						<div class="picture picture_3"></div>	
+						<p class="text" style="margin-top: 20px;">Залишилось менше ніж місяць до початку літа і прийшов час поговорити про <em><a href="#">сонцезахисні окуляри</a></em>. Як ми знаємо, ваша форма обличчя визначає, який стиль окулярів вам найбільше пасуватиме.</p>
+						<p class="detail"><a href="#">ДЕТАЛЬНЕЕ ></a></p>
+						<p class="author">Автор: <a href="#"><b>Lovers To Lovers для KARLMENNY.com</b></a></p>
+					</div>
+					<div class="nav-links">
+						<div class="nav-previous"><a href="#"><span class="meta-nav">←</span> Ранее</a></div>
+						<div class="nav-next"><a href="#">Новые <span class="meta-nav">→</span></a></div>
+					</div>
+				</div>
+				
+			</div>			
+			<!--END OF MAIN CONTENT-->	
+			
+			<!-- Back to TOP -->
+			<a href="#" id="toTop"></a>		
+			
+			<!--START OF FOOTER-->
+			<div class="footer-container">
+				<div class="tape">
+					<div class="invite"><a href="#"></a></div>		
+					
+					<div id="bottomNewsletterWrap">
+						<form>
+							<input name="subscribe" placeholder="Подпишитесь на рассылку и получите 300 грн." title="Введите Ваш email" type="text">
+							<button type="submit">Сохранить</button>
+						</form>
+					</div>
+				</div>
+				
+				<section id="sectionMain">
+					<div id="mainCols">
+						<div class="col">
+							<div class="colHead">
+								<h3>Информация</h3>
+							</div>
+							<div class="colContent">
+								<ul>
+									<li><a href="#">O KARLMENNY.com</a></li>
+									<li><a href="#">Правила магазина KARLMENNY.com</a></li>
+									<li><a href="#">Правила KarlMennY Club</a></li>
+									<li><a href="#">Правила "Рекомендуйте нас знакомым"</a></li>
+								</ul>
+							</div>
+						</div>
+			
+						<div class="col">
+							<div class="colHead">
+								<h3>Центр поддержки</h3>
+							</div>
+							<div class="colContent">
+								<ul>	
+									<li><a href="#">Возвраты, обмены и рекламации</a></li>
+									<li><a href="#">Стоимость и способы доставки</a></li>
+									<li><a href="#">Время реализации заказа</a></li>
+									<li><a href="#">Часто задаваемые вопросы</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="colHead">
+								<h3>Способы доставки</h3>
+							</div>
+							<div class="colContent">
+								<ul>
+									<li><a href="#" class="link">Точка выдачи (Міст Експрес)</a></li>
+									<li><a href="#" class="link">Курьер (Міст Експрес)</a></li>
+									<li><a href="#" class="link">Почтомат ПриватБанка (Міст Експрес) </a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col">
+							<div class="colHead">
+								<h3>Connect &amp; Share</h3>
+							</div>	
+							<div class="social_box">
+								<div class="facebook"><a title="Facebook" href="https://uk-ua.facebook.com/" target="_blank"></a></div>
+								<div class="twitter"><a title="Twitter" href="https://twitter.com/?lang=ru" target="_blank"></a></div>
+								<div class="linkedin"><a title="Linkedin" href="https://www.linkedin.com/russkiy" target="_blank"></a></div>
+								<div class="youtube cboxElement"><a title="Youtube" href="https://www.youtube.com/" target="_blank"></a></div>
+							</div>
+							<div class="payment"><a href="https://www.americanexpress.com/russia/rsb/" target="_blank"><img src="images/social_box/amexp.jpg" alt="Оплата через american express" title="Оплата через american express"></a><a href="http://www.visa.com.ua/" target="_blank"><img src="images/social_box/visa.jpg" alt="Оплата через visa" title="Оплата через visa"></a><a href="http://www.mastercard.com/ua/consumer/" target="_blank"><img src="images/social_box/mastercard.jpg" alt="Оплата через mastercard" title="Оплата через mastercard"></a><a href="http://www.discovercard.ru/aboutdiscover/" target="_blank"><img src="images/social_box/discover.jpg" alt="Oплата через discover" title="Oплата через discover"></a></div>
+						</div>
+					</div>			
+				</section>.
+				<address>Copyright © 2015 - 2016 KARLMENNY.com Создано Andrew Kirichenko</address>
+
+			</div>
+			<!--END OF FOOTER-->	
+		</div>	
+		<script type="text/javascript" src="scripts/gallery-box.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,137 @@
+form.custom .row {
+    padding: 6px 0;
+}
+
+form.custom .row input.text,
+form.custom .row textarea.textarea {
+    width: 92%;
+    resize: none;
+    padding: 10px 7px 10px 7px;
+    margin: 0 0 0 0;
+    border: 1px solid #cdcdcd;
+
+}
+
+form.custom .row label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 0 0 6px 0;
+    font-family: arial, helvetica, sans-serif;
+}
+
+form.custom .row label span {
+    color: red;
+}
+
+.btns button {
+    padding: 15px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #be9e56;
+    text-align: center;
+    border: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.btns button:hover {
+    background-color: #b59346;
+}
+
+#callMe {
+    position: fixed;
+    left: -255px;
+    -webkit-box-shadow: -2px 1px 2px rgba(0, 0, 0, 0.15),
+    2px 1px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -2px 1px 2px rgba(0, 0, 0, 0.15),
+    2px 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: -2px 1px 2px rgba(0, 0, 0, 0.15),
+    2px 1px 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+#callMe .relative {
+    position: relative;
+    padding: 15px 25px;
+    width: 200px;
+    background-color: #e5e5e5;
+}
+
+#callMe .relative h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    font-family: arial, helvetica, sans-serif;
+}
+
+#callMe .relative input,
+#callMe .relative textarea {
+    background-color: #ffffff;
+}
+
+#callMe .relative button.submit {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#callMe .relative button.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/iconClose.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    cursor: pointer;
+    background-color: #e5e5e5;
+    border: 0;
+}
+
+#callMe .relative button.close:hover {
+    background-size: 50%;
+}
+
+#callMe .relative .callMeIcon {
+    background-color: #000000;
+    background-image: url("../images/phone_white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+    cursor: pointer;
+    opacity: 0.8;
+    border: 0;
+    border-radius: 7px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -moz-border-radius: 10px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+#callMe .relative .callMeIcon:hover {
+    background-color: #be9e56;
+}
+
+#callMe.active {
+    left: 0;
+}
+
+#callMe.active .relative .callMeIcon {
+    display: none;
+}

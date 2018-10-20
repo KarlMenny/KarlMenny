@@ -1,0 +1,1196 @@
+/* ХЛЕБНЫЕ КРОШКИ ==============================================================================*/
+#contentBar {
+    width: 960px;
+    height: 50px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+#contentBar #breadcrumbsWrap * {
+    display: block;
+}
+
+#contentBar #breadcrumbsWrap {
+    padding: 20px 0 0 20px;
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li {
+    float: left;
+    padding-left: 20px;
+    background: transparent url(../images/images_bruki/breadcrumbsSep.png) 8px 1px no-repeat;
+    background-size: 6px 8px;
+    background-position: 7px 3px;
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li:first-child {
+    background-image: none;
+    padding-left: 0;
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li a,
+#contentBar #breadcrumbsWrap #breadcrumbs li h1 {
+    text-transform: uppercase;
+    color: #7f7f7f;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: arial, helvetica, sans-serif;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li h1 {
+    color: #000000;
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li a:hover {
+    color: #be9e56;
+}
+
+.right {
+    float: right;
+    margin: 15px 20px 0 0;
+    width: 402px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#productPanel {
+    width: 402px;
+    height: 390px;
+    text-transform: uppercase;
+}
+
+#productPanel .productPanelTop {
+    width: 402px;
+}
+
+#productPanel .productPanelTop h2 {
+    padding: 0 100px 16px 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#productPanel .productPanelTop .productBrandIcon {
+    position: absolute;
+    margin-left: 322px;
+    width: 80px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+#productPanel .productPanelTop .productBrandIcon img {
+    display: block;
+    width: 100%;
+}
+
+#productPanel .productPanelTop .productBrandIcon:hover {
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    opacity: 0.8;
+    -ms-filter: alpha(opacity=80);
+    filter: alpha(opacity=80);
+}
+
+#productPanel .productPanelTop .price {
+    padding: 0 0 22px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#productPanel .productPanelTop .acInfo {
+    padding: 0 0 27px 0;
+}
+
+#productPanel .productPanelTop .acInfo a,
+#productPanel .productPanelTop .acInfo span {
+    color: #be9e56;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+#productPanel .productPanelTop .acInfo a:hover {
+    color: #000000;
+}
+
+/*ВЫБОР ЦВЕТА ==============================================================================*/
+#productPanel .colors_container {
+    width: 402px;
+    height: 38px;
+    padding-bottom: 26px;
+}
+
+#productPanel .colors_container .colors * {
+    display: block;
+}
+
+#productPanel .colors_container .colors li {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+#productPanel .colors_container .colors li a {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+#productPanel .colors_container .colors li a:hover {
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    opacity: 0.8;
+    -ms-filter: alpha(opacity=80);
+    filter: alpha(opacity=80);
+}
+
+#productPanel .colors_container .colors li a img {
+    width: 38px;
+    height: 38px;
+}
+
+/*ВЫПАДАЮЩИЙ СПИСОК SELECT ==============================================================================*/
+#productPanel .list_sort {
+    float: left;
+    font-family: arial, helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    outline: none;
+}
+
+#productPanel .dropcontainer {
+    position: relative;
+    color: #777;
+    z-index: 2;
+}
+
+#productPanel .trigger {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 7px;
+    background: #e5e5e5 url(../images/images_bruki/select-arrow-open.png) 92% center no-repeat;
+    display: block;
+    width: 147px;
+    height: 35px;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#productPanel .trigger:hover {
+    background: #ededed url(../images/images_bruki/select-arrow-open.png) 92% center no-repeat;
+}
+
+#productPanel .activetrigger {
+    color: #555;
+    padding: 10px 7px;
+    text-decoration: none;
+    background: #ededed url(../images/images_bruki/select-arrow-close.png) 92% center no-repeat;
+    display: block;
+    width: 147px;
+    height: 35px;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#productPanel .dropcontainer ul {
+    width: 147px;
+    border-top: none;
+    background: #fff;
+    list-style-type: none;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#productPanel .dropcontainer ul li {
+    padding: 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#productPanel .dropcontainer ul li a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+#productPanel .dropcontainer ul li:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+    outline: none;
+}
+
+#productPanel .dropcontainer ul li:first-child {
+    display: none;
+}
+
+#productPanel .dropdownhidden {
+    display: none;
+}
+
+#productPanel .dropdownvisible {
+    height: auto;
+}
+
+/*ТАБЛИЦА РАЗМЕРОВ ==============================================================================*/
+#productPanel .sizeTable {
+    float: left;
+    padding: 5px 0 0 15px;
+}
+
+#productPanel .sizeTable * {
+    display: block;
+}
+
+#productPanel .sizeTable span {
+    padding: 6px 0 0 130px;
+}
+
+#productPanel .sizeTable a {
+    outline: none;
+    width: 120px;
+    height: 28px;
+    background: url(../images/images_bruki_look/size_guide.gif) no-repeat;
+}
+
+/*КНОПКИ В КОРЗИНУ ИЗБРАННОЕ ==============================================================================*/
+#productPanel .btns {
+    clear: both;
+    padding: 25px 0 20px 0;
+}
+
+#productPanel .btns a {
+    float: left;
+    padding-top: 13px;
+    box-sizing: border-box;
+    height: 45px;
+    text-align: center;
+    font-size: 16px;
+    font-family: arial, helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #be9e56;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+#productPanel .btns a.toBasket {
+    width: 220px;
+    background-image: url(../images/images_bruki_look/iconToBasket.png);
+    background-position: 15px 50%;
+    background-size: 28px auto;
+    background-repeat: no-repeat;
+}
+
+#productPanel .btns a.toBasket:hover {
+    background-color: #b59346;
+}
+
+#productPanel .btns a.toSave {
+    width: 150px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#productPanel .btns a.toSave:hover {
+    color: #be9e56;
+}
+
+/*СПИСКИ + ==============================================================================*/
+.right #productInfo * {
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+}
+
+.right #productInfo {
+    clear: both;
+    text-transform: none;
+    padding-top: 20px;
+    font-size: 11px;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.right #productInfo #accordionInfo {
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.right #productInfo #accordionInfo .accordionItem {
+    border-top: 1px #e5e5e5 solid;
+}
+
+.right #productInfo #accordionInfo .accordionItem .head a {
+    display: block;
+    padding: 15px 0 0 35px;
+    height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    background: transparent url(../images/images_bruki_look/plusMinus.png) 10px 0 no-repeat;
+    background-size: 12px 100px;
+    font-family: arial, helvetica, sans-serif;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.right #productInfo #accordionInfo .accordionItem .head a:hover {
+    color: #be9e56;
+}
+
+.right #productInfo #accordionInfo .accordionItem .content a {
+    text-decoration: none;
+    color: #000000;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.right #productInfo #accordionInfo .accordionItem .content a:hover {
+    color: #be9e56;
+}
+
+.right #productInfo #accordionInfo .accordionItem.active .head a {
+    background-position: 10px -50px;
+}
+
+.right #productInfo #accordionInfo .accordionItem .content {
+    display: none;
+}
+
+.right #productInfo #accordionInfo .accordionItem .content .inner {
+    padding: 0 0 10px 12px;
+    line-height: 16px;
+}
+
+/*ВЫПАДАЮЩИЕ ФОРМЫ ==============================================================================*/
+.right #productInfo #socialWrap {
+    padding: 15px 0 0 0;
+}
+
+.right #productInfo #socialWrap a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #000000;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.right #productInfo #socialWrap a.btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 10px 0 0 0;
+    margin: 0 25px 0 0;
+}
+
+.right #productInfo #socialWrap a.btn:hover {
+    color: #be9e56;
+}
+
+.right #productInfo #productForms {
+    padding: 20px 0 0 0;
+    float: left;
+    width: 80%;
+}
+
+.right #productInfo #productForms .formWrap {
+    display: none;
+}
+
+.right #productInfo #productForms .formWrap h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0 0 12px 0;
+}
+
+.right #productInfo #productForms .formWrap fieldset .row label {
+    display: none;
+}
+
+.right #productInfo .clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.right #productInfo #productForms input {
+    border: 0;
+}
+
+.right #productInfo #productForms fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size: 12px;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.right #productInfo #productForms form.custom .row {
+    position: relative;
+    padding: 6px 0;
+}
+
+.right #productInfo #productForms form.custom .row label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 0 0 6px 0;
+}
+
+.right #productInfo #productForms form.custom .row input.text,
+.right #productInfo #productForms form.custom .row textarea.textarea {
+    background-color: #e5e5e5;
+    border: 0;
+    width: 100%;
+    max-width: 100%;
+    resize: none;
+    padding: 15px 12px 15px 15px;
+    background-position: 120% 50%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.right #productInfo #productForms form.custom label.lab {
+    display: block !important;
+    font-size: 11px !important;
+}
+
+.right #productInfo #productForms .btns input {
+    display: block;
+    float: left;
+    padding: 15px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #be9e56;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.right #productInfo #productForms .btns input:hover {
+    background-color: #b59346;
+}
+
+/*ЧЕКБОКС ФОРМЫ СПРОСИТЬ О ПРОДУКТЕ ==============================================================================*/
+.right #productInfo .formWrap .cbox label span {
+    display: block;
+    float: left;
+    padding: 0 0 0 9px;
+    text-transform: none;
+    width: 85%;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: ptsans_regular, arial, sans-serif;
+}
+
+.right #productInfo .formWrap form.custom .row, form.custom .cols {
+    position: relative;
+    padding: 6px 0;
+}
+
+.right #productInfo .formWrap .cbox label input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: -99999px;
+}
+
+.right #productInfo .formWrap input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.right #productInfo .formWrap label.checked i {
+    background-position: 0 -19px;
+}
+
+.cbox label i {
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    background: #e5e5e5 url(../images/images_bruki_look/filterCb.png) 0 0 no-repeat;
+    border: 1px #fff solid;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+/*ПРОСМОТР ТОВАРА ==============================================================================*/
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.owl-carousel.owl-loaded {
+    display: block;
+}
+
+.owl-carousel .owl-refresh .owl-item {
+    display: none;
+}
+
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+}
+
+#A3lightboxCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.5;
+}
+
+#A3lightbox {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+#A3lightbox.showed {
+    z-index: 99999999;
+    opacity: 1;
+}
+
+#A3lightbox #allContener {
+    position: absolute;
+    width: 990px;
+    border: 1px solid #000;
+    left: 50%;
+    margin-left: -495px;
+    background: #fff;
+    height: 100%;
+}
+
+#A3lightbox #allContenerInner {
+    margin: 15px;
+}
+
+#A3lightbox #imgContener {
+    width: 855px;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+#A3lightbox #imgContener img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#A3lightbox #thumbs {
+    width: 87px;
+    float: right;
+    margin-top: 20px;
+}
+
+#A3lightbox #thumbs img {
+    width: 85px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#A3lightbox #thumbs a {
+    outline: none;
+}
+
+.A3lightbox-loading {
+    background: url(../images/images_bruki_look/loader.gif) center center no-repeat;
+    width: 24px;
+    height: 24px;
+    margin: -12px 0 0 0px;
+    position: absolute;
+    top: 50%;
+    left: 443px;
+}
+
+.A3lightbox-button {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+    width: 87px;
+    padding-left: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #444;
+    outline: none;
+    opacity: 0.6;
+    transition: opacity 0.6s;
+}
+
+.A3lightbox-button:hover, .A3lightbox-button:focus {
+    opacity: 1;
+}
+
+.A3lightbox-next, .A3lightbox-previous {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+    height: 40px;
+    width: 39px;
+    margin: 430px 0 0 20px;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.A3lightbox-next:hover, .A3lightbox-previous:hover {
+    opacity: 1;
+}
+
+.A3lightbox-next {
+    left: 795px;
+    background-image: url(../images/images_bruki_look/owl-next.png);
+}
+
+.A3lightbox-previous {
+    left: 15px;
+    background-image: url(../images/images_bruki_look/owl-prev.png);
+}
+
+.left {
+    margin: 20px 0 0 20px;
+    width: 498px;
+
+}
+
+.left .productPanelTop {
+    position: relative;
+}
+
+.left .productPanelTop .productBrandIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 80px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.left .productPanelTop .productBrandIcon img {
+    display: block;
+    width: 100%;
+}
+
+.left .productPanelTop .productBrandIcon:hover {
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    opacity: 0.8;
+    -ms-filter: alpha(opacity=80);
+    filter: alpha(opacity=80);
+}
+
+.left .productPanelTop h2.title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 28px;
+    padding: 0 100px 20px 0;
+    color: #7f7f7f;
+    font-weight: normal;
+    font-family: bebasneue_bold, arial, sans-serif;
+}
+
+.left .productPanelTop .prices {
+    font-size: 0;
+    padding: 0 0 20px 0;
+    color: #000000;
+}
+
+.left .productPanelTop .prices span {
+    display: inline-block;
+    font-size: 28px;
+    padding: 0;
+    font-family: bebasneue_bold, arial, sans-serif;
+}
+
+.left .productPanelTop .prices span.regular {
+    margin-right: 15px;
+}
+
+.left .productPanelTop .prices span.old {
+    position: relative;
+    margin-right: 15px;
+}
+
+.left .productPanelTop .prices span.old::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-bottom: 1px solid #000000;
+}
+
+.left .productPanelTop .prices span.promo {
+    margin-right: 15px;
+    color: #b30000;
+}
+
+.left .productPanelTop #acInfo {
+    text-transform: uppercase;
+    padding: 0 0 25px 0;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.left .productPanelTop #acInfo a, .left .productPanelTop #acInfo span {
+    color: #be9e56;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.left .productPanelTop #acInfo a:hover {
+    color: #000000;
+}
+
+#productSliderWrap * {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#productSliderWrap, #productInfoLine {
+    position: relative;
+}
+
+#productSliderWrap {
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+    opacity: 0;
+    -ms-filter: alpha(opacity=0);
+    filter: alpha(opacity=0);
+    overflow: hidden;
+}
+
+#productSliderNav {
+    width: 8%;
+    float: left;
+    padding-right: 10px;
+}
+
+#productSliderNav a {
+    display: block;
+    padding: 0 0 10px 0;
+}
+
+#productSliderNav a img {
+    display: block;
+    width: 100%;
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    -webkit-opacity: 0.5;
+    opacity: 0.5;
+    -ms-filter: alpha(opacity=50);
+    filter: alpha(opacity=50);
+}
+
+#productSliderNav a.active img {
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1;
+    -ms-filter: alpha(opacity=100);
+    filter: alpha(opacity=100);
+}
+
+#productSliderNav a.videoPlay {
+    position: relative;
+}
+
+#productSliderNav a.videoPlay img {
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1;
+    -ms-filter: alpha(opacity=100);
+    filter: alpha(opacity=100);
+}
+
+#productSliderNav a.videoPlay .control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url(../images/images_bruki_look/videoPlay2.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 65% 65%;
+}
+
+#productSliderNav a.videoPlay .control.play {
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1;
+    -ms-filter: alpha(opacity=100);
+    filter: alpha(opacity=100);
+}
+
+#productSliderNav a.videoPlay .control.stop {
+    display: none;
+}
+
+#productSlider {
+    float: right;
+    width: 92%;
+}
+
+#productSlider .owl-controls .owl-nav > div {
+    position: absolute;
+    top: 0;
+    margin-top: 143px;
+    padding-right: 70px;
+    width: 39px;
+    height: 40px;
+    text-indent: -99999px;
+    background: transparent;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#productSlider .owl-controls .owl-nav > div.owl-next {
+    right: 0;
+    background-image: url(../images/images_bruki_look/owl-next.png);
+    background-position: 70% 50%;
+    background-size: 32px 32px;
+    opacity: 0.7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#productSlider .owl-controls .owl-nav > div.owl-next:hover {
+    opacity: 1;
+}
+
+#productSlider .owl-controls .owl-nav > div.owl-prev {
+    left: 0;
+    background-image: url(../images/images_bruki_look/owl-prev.png);
+    background-position: 30% 50%;
+    background-size: 32px 32px;
+    opacity: 0.7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#productSlider .owl-controls .owl-nav > div.owl-prev:hover {
+    opacity: 1;
+}
+
+#productSlider .owl-item a {
+    cursor: url('../images/images_bruki_look/owl-zoom.cur'), auto;
+}
+
+#productSlider.single .owl-stage {
+    margin: 0 auto !important;
+}
+
+#videoPlayer {
+    display: none;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+
+#videoPlayer video#productVideo {
+    position: relative;
+    top: -2px;
+    left: -2px;
+    width: 101%;
+    height: 101%;
+    background-color: #ffffff;
+}
+
+#videoPlayer #videoReplay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: none;
+}
+
+#videoPlayer #videoReplay #replayBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -16px 0 0 -70px;
+    width: 140px;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: bebasneue_bold, arial, sans-serif;
+}
+
+#productInfoLine {
+    padding: 20px 0 0 38px;
+    text-transform: uppercase;
+    color: #7f7f7f;
+    font-size: 11px;
+    line-height: 14px;
+    font-family: ptsans_regular, arial, sans-serif;
+}
+
+/*СЛАЙДЕР "СМОТРИТЕ ТАКЖЕ" ==============================================================================*/
+.owl-carousel {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.bottom {
+    margin: 0 0 0 107px;
+    width: 750px;
+    font-family: arial, helvetica, sans-serif;
+    text-transform: uppercase;
+    clear: both;
+
+}
+
+.bottom h2 {
+    padding: 20px 0 20px 0;
+    font-weight: normal;
+    font-size: 19px;
+    text-align: center;
+}
+
+.bottom section.productMore * {
+    display: block;
+}
+
+.bottom section.productMore ul li {
+    float: left;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.bottom section.productMore ul li a {
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.bottom section.productMore ul li a img {
+    width: 100%;
+    max-width: 177px;
+}
+
+.bottom section.productMore ul li a:hover img {
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    opacity: 0.8;
+    -ms-filter: alpha(opacity=80);
+    filter: alpha(opacity=80);
+}
+
+.bottom section.productMore .name {
+    margin-top: 15px;
+    color: #7f7f7f;
+    font-size: 12px;
+}
+
+.bottom section.productMore .price {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bottom section.productMore .owl-prev,
+.bottom section.productMore .owl-next {
+    position: absolute;
+    top: 29%;
+    width: 30px;
+    height: 50px;
+    text-indent: -9999px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.bottom section.productMore .owl-prev:hover,
+.bottom section.productMore .owl-next:hover {
+    opacity: 0.5;
+}
+
+.bottom section.productMore .owl-prev {
+    background: url(../images/images_bruki/arrowLeft.png) center no-repeat;
+    left: -25px;
+}
+
+.bottom section.productMore .owl-next {
+    background: url(../images/images_bruki/arrowRight.png) center no-repeat;
+    right: -25px;
+}
+
+

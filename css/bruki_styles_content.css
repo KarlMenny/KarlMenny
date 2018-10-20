@@ -1,0 +1,787 @@
+/* ХЛЕБНЫЕ КРОШКИ ==============================================================================*/ 
+#contentBar {
+    float: left;
+    width: 960px;
+    height: 50px;
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+#contentBar #breadcrumbsWrap * {
+    display: block;
+}
+
+#contentBar #breadcrumbsWrap {
+    padding: 20px 0 0 20px;
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li {
+    float: left;
+    padding-left: 20px;
+    background: transparent url(../images/images_bruki/breadcrumbsSep.png) 8px 1px no-repeat;
+    background-size: 6px 8px;
+    background-position: 7px 3px;
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li:first-child {
+    background-image: none;
+    padding-left: 0;
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li a,
+#contentBar #breadcrumbsWrap #breadcrumbs li h1 {
+    text-transform: uppercase;
+    color: #7f7f7f;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: arial, helvetica, sans-serif;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li h1 {
+    color: #000000;
+}
+
+#contentBar #breadcrumbsWrap #breadcrumbs li a:hover {
+    color: #be9e56;
+}
+
+.panel_unit {
+    float: left;
+    margin: 20px 0 20px 20px;
+}
+
+/*КНОПКА ПРИМЕНИТЬ ФИЛЬТРЫ ==============================================================================*/
+.panel_unit .active_filter a {
+    float: left;
+    display: block;
+    width: 174px;
+    height: 40px;
+    padding-top: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: arial, helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #e5e5e5;
+    color: #000;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.panel_unit .active_filter a:hover {
+    background-color: #ededed;
+}
+
+/*ВЫПАДАЮЩИЙ СПИСОК SELECT ==============================================================================*/
+.panel_unit .list_sort, .list_size {
+    position: absolute;
+    margin: 2px 0 0 213px;
+    font-family: arial, helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    outline: none;
+}
+
+.panel_unit .list_size {
+    margin-left: 500px;
+}
+
+.panel_unit .list_sort label, .list_size label {
+    float: left;
+    padding-top: 11px;
+}
+
+.panel_unit .dropcontainer {
+    position: relative;
+    margin-left: 95px;
+    color: #777;
+    z-index: 2;
+}
+
+.panel_unit .list_size .dropcontainer {
+    margin-left: 75px;
+}
+
+.panel_unit .trigger {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 7px;
+    margin-left: 95px;
+    background: #e5e5e5 url(../images/images_bruki/select-arrow-open.png) 92% center no-repeat;
+    display: block;
+    width: 147px;
+    height: 35px;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.panel_unit .list_size .trigger {
+    margin-left: 75px;
+    width: 70px;
+    background-position: 82%;
+}
+
+.panel_unit .trigger:hover {
+    background: #ededed url(../images/images_bruki/select-arrow-open.png) 92% center no-repeat;
+}
+
+.panel_unit .list_size .trigger:hover {
+    background: #ededed url(../images/images_bruki/select-arrow-open.png) 82% center no-repeat;
+}
+
+.panel_unit .activetrigger {
+    color: #555;
+    padding: 10px 7px;
+    margin-left: 95px;
+    text-decoration: none;
+    background: #ededed url(../images/images_bruki/select-arrow-close.png) 92% center no-repeat;
+    display: block;
+    width: 147px;
+    height: 35px;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.panel_unit .list_size .activetrigger {
+    margin-left: 75px;
+    width: 70px;
+    background-position: 82%;
+}
+
+.panel_unit .dropcontainer ul {
+    width: 147px;
+    border-top: none;
+    background: #fff;
+    list-style-type: none;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.panel_unit .list_size .dropcontainer ul {
+    width: 70px;
+}
+
+.panel_unit .dropcontainer ul li {
+    padding: 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.panel_unit .dropcontainer ul li a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.panel_unit .dropcontainer ul li:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+    outline: none;
+}
+
+.panel_unit .dropdownhidden {
+    display: none;
+}
+
+.panel_unit .dropdownvisible {
+    height: auto;
+}
+
+/*СМЕНА СТРАНИЦ ==============================================================================*/
+.panel_unit .panelPagination {
+    margin: 2px 0 0 697px;
+}
+
+.panel_unit .panelPagination .pagination .nxpv.disabled {
+    cursor: default;
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    -webkit-opacity: 0.3;
+    opacity: 0.3;
+    -ms-filter: alpha(opacity=30);
+    filter: alpha(opacity=30);
+}
+
+.panel_unit .panelPagination .pagination .nxpv.pv {
+    background-image: url(../images/images_bruki/arrowLeft.png);
+    padding-top: 1px;
+}
+
+.panel_unit .panelPagination .pagination .nxpv.nx {
+    background-image: url(../images/images_bruki/arrowRight.png);
+    padding-top: 1px;
+}
+
+.panel_unit .panelPagination .pagination .nxpv {
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    background-color: #e5e5e5;
+    background-position: 50% 50%;
+    background-size: 8px auto;
+    background-repeat: no-repeat;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+.panel_unit .panelPagination .pagination .nx:hover {
+    background-color: #ededed;
+}
+
+.panel_unit .panelPagination .pagination .pag.paginationLabel {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.panel_unit .panelPagination .pagination .pag {
+    display: block;
+    height: 35px;
+    float: left;
+}
+
+.panel_unit .panelPagination .pagination .pag > span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #7f7f7f;
+    padding: 12px 0 0 0;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.panel_unit .panelPagination .pagination .pag.paginationInput {
+    display: block;
+    border: 1px #e5e5e5 solid;
+    text-align: center;
+    width: 35px;
+    margin: 0;
+    font-size: 11px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.panel_unit .panelPagination .pagination .pag {
+    display: block;
+    height: 35px;
+    float: left;
+}
+
+.panel_unit .panelPagination .pagination .pag.paginationTotal {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.panel_unit .panelPagination .pagination .pag.paginationTotal > span {
+    text-transform: lowercase;
+}
+
+.panel_unit .panelPagination .pagination .pag > span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #000;
+    padding: 12px 0 0 0;
+    font-family: arial, helvetica, sans-serif;
+}
+
+/* САЙДБАР ФИЛЬТР ==============================================================================*/
+#filtersWrap {
+    width: 213px;
+    height: 50%;
+    float: left;
+}
+
+#ng-binding section,
+#ng-binding .section {
+    margin: 0 0 23px 20px;
+    font-family: arial, helvetica, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#ng-binding .section_scroll_size,
+.section_scroll_color,
+.section_scroll_brands {
+    overflow: auto;
+    width: 192px;
+    height: 200px;
+}
+
+#ng-binding *,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ac-custom h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 9px;
+}
+
+.ac-custom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.ac-custom li {
+    margin: 0 auto;
+    padding: 5px 0;
+    position: relative;
+}
+
+.ac-custom label {
+    display: inline-block;
+    position: relative;
+    font-size: 11px;
+    padding: 0 0 0 28px;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom label::before {
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 0;
+    margin-top: -11px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.ac-custom input[type="checkbox"] {
+    opacity: 0;
+    -webkit-appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 100;
+}
+
+.ac-custom label::before {
+    content: '';
+    border: 2px solid #000;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+.ac-custom input[type="checkbox"]:checked + label {
+    color: #666666;
+}
+
+.ac-custom input[type="checkbox"]:checked + label::before {
+    opacity: 0.8;
+}
+
+.ac-custom svg {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    margin-top: -4px;
+    left: 5px;
+    pointer-events: none;
+}
+
+.ac-custom svg path {
+    stroke: #000;
+    stroke-width: 13px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.ac-custom .find_brend {
+    margin-bottom: 14px;
+}
+
+.ac-custom .find_brend input {
+    background: #e5e5e5 url(../images/images_bruki/iconSearch.png) 7px 53% no-repeat;
+    background-size: 14px auto;
+    width: 91%;
+    padding: 8px 10px 8px 32px;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: 0;
+}
+
+/*СЛАЙДЕР ЦЕНЫ ==============================================================================*/
+#price_slider {
+    margin-bottom: 15px !important;
+}
+
+#price_slider h2 {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: arial, helvetica, sans-serif;
+    margin-bottom: 14px;
+}
+
+#price_slider .formCost {
+    margin-left: 16px;
+}
+
+#price_slider .formCost input {
+    float: left;
+    margin: 23px 25px 0 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    width: 60px;
+    height: 26px;
+    background: #e5e5e5;
+    border: 0;
+}
+
+#price_slider .sliderCont {
+    float: left;
+    margin-left: 8px;
+}
+
+/* ПРАВИЛА ДЛЯ СКРИПТА СЛАЙДЕР ЦЕНЫ ==============================================================================*/
+#slider {
+    width: 160px;
+}
+
+.ui-slider {
+    position: relative;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    outline: none;
+}
+
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+
+.ui-slider-horizontal {
+    height: 10px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -2px;
+    margin-left: -7px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+
+.ui-widget-content {
+    background: #e5e5e5;
+}
+
+.ui-widget-header {
+    background: #999999;
+}
+
+/*ВЫБОР ТОВАРА ==============================================================================*/
+#choise_goods {
+    float: left;
+    margin-left: 10px;
+    width: 730px;
+    font-family: arial, helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#choise_goods .your_choise {
+    float: left;
+    padding: 0 10px 20px 10px;
+    box-sizing: border-box;
+    width: 242px;
+    height: 452px;
+}
+
+#choise_goods .your_choise .images a {
+    position: relative;
+    display: block;
+    width: 224px;
+    height: 338px;
+    z-index: 1;
+}
+
+/*ПЛАВНАЯ СМЕНА КАРТИНКИ ПРИ НАВЕДЕНИИ ==============================================================================*/
+#choise_goods .your_choise .images .image-up {
+    opacity: 1.0;
+    filter: alpha(opacity=99); /* IE */
+    display: block;
+    position: absolute;
+    z-index: 100;
+    transition-duration: 0.96s;
+    -webkit-transition-duration: 0.96s;
+    -moz-transition-duration: 0.96s;
+    -o-transition-duration: 0.96s;
+    -ms-transition-duration: 0.96s; /* IE9+ */
+}
+
+#choise_goods .your_choise .images .image-up:hover {
+    opacity: 0.00;
+    filter: alpha(opacity=00); /* IE */
+}
+
+#choise_goods .your_choise .info {
+    position: relative;
+    top: -120px;
+    width: 224px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#choise_goods .your_choise .info .active_show {
+    position: relative;
+}
+
+#choise_goods .your_choise .info .active_show .info_show,
+.info_show_tall, .info_show_tall_1, .info_show_tall_up {
+    position: absolute;
+    margin-top: 120px;
+    width: 224px;
+    height: 180px;
+    background: #fff;
+    top: 0;
+    z-index: 0;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+#choise_goods .your_choise .active_show:hover .info_show {
+    top: -45px;
+    z-index: 10;
+}
+
+#choise_goods .your_choise .active_show:hover .info_show_tall {
+    top: -88px;
+    z-index: 10;
+}
+
+#choise_goods .your_choise .active_show:hover .info_show_tall_1 {
+    top: -45px;
+    z-index: 10;
+}
+
+#choise_goods .your_choise .active_show:hover .info_show_tall_up {
+    top: -131px;
+    z-index: 10;
+}
+
+#choise_goods .your_choise .name {
+    margin-top: 15px;
+    color: #7f7f7f;
+}
+
+#choise_goods .your_choise .now {
+    margin-top: 5px;
+    font-size: 10px;
+    color: #b30000;
+}
+
+#choise_goods .your_choise .price {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#choise_goods .your_choise .sizes {
+}
+
+#choise_goods .your_choise .sizes a {
+    display: inline-block;
+    background-color: #e5e5e5;
+    color: #000;
+    padding: 7px;
+    box-sizing: border-box;
+    min-width: 26px;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: arial, helvetica, sans-serif;
+    text-align: center;
+    margin: 15px 0 0 3px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#choise_goods .your_choise .sizes a:hover {
+    background-color: #000000;
+    color: #be9e56;
+}
+
+#choise_goods .your_choise .active_show .info_show .arrow,
+#choise_goods .your_choise .active_show .info_show_tall .arrow,
+#choise_goods .your_choise .active_show .info_show_tall_1 .arrow,
+#choise_goods .your_choise .active_show .info_show_tall_up .arrow {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    width: 0;
+    height: 0;
+    border-top: 0;
+    border-right: 12px transparent solid;
+    border-bottom: 12px #fff solid;
+    border-left: 12px transparent solid;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+#choise_goods .your_choise .active_show .info_show:hover .arrow,
+#choise_goods .your_choise .active_show .info_show_tall:hover .arrow,
+#choise_goods .your_choise .active_show .info_show_tall_1:hover .arrow,
+#choise_goods .your_choise .active_show .info_show_tall_up:hover .arrow {
+    top: -11px;
+}
+
+/*ВСПЛЫВАЮЩАЯ ПОДСКАЗКА ==============================================================================*/
+#choise_goods .your_choise .hide a {
+    position: absolute;
+    margin: 15px;
+    width: 23px;
+    height: 18px;
+    background: url(../images/images_bruki/eyeIcon.png) 50% 50% no-repeat;
+    background-size: 20px auto;
+    z-index: 2;
+    outline: none;
+}
+
+#choise_goods .your_choise .hide .hint, [data-hint] {
+    position: relative;
+    display: inline-block;
+}
+
+#choise_goods .your_choise .hide .hint:before,
+#choise_goods .your_choise .hide .hint:after,
+[data-hint]:before, [data-hint]:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+#choise_goods .your_choise .hide .hint:hover:before,
+#choise_goods .your_choise .hide .hint:hover:after,
+[data-hint]:hover:before, [data-hint]:hover:after {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+#choise_goods .your_choise .hide .hint:before,
+[data-hint]:before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border: 6px solid transparent;
+    z-index: 3;
+}
+
+#choise_goods .your_choise .hide .hint:after,
+[data-hint]:after {
+    content: attr(data-hint);
+    background: #000;
+    color: white;
+    padding: 8px 10px;
+    font-size: 10px;
+    white-space: nowrap;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#choise_goods .your_choise .hide .hint--right:before {
+    border-right-color: #000;
+}
+
+#choise_goods .your_choise .hide .hint--right:before {
+    margin-left: -12px;
+    margin-bottom: -6px;
+}
+
+#choise_goods .your_choise .hide .hint--right:after {
+    margin-bottom: -14px;
+}
+
+#choise_goods .your_choise .hide .hint--right:before,
+#choise_goods .your_choise .hide .hint--right:after {
+    left: 100%;
+    bottom: 50%;
+}
+
+#choise_goods .your_choise .hide .hint--right:hover:before,
+#choise_goods .your_choise .hide .hint--right:hover:after {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+#choise_goods .your_choise .hide .hint--right:after {
+    border-radius: 4px;
+}
+

@@ -1,0 +1,190 @@
+body * {
+    font-size: 12px;
+}
+
+.ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+}
+
+.ui-helper-clearfix:after {
+    clear: both;
+}
+
+.ui-widget {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.1em;
+}
+
+#sizeTablePopup {
+    position: relative;
+    width: 798px;
+    height: 578px;
+    margin: 0 auto;
+}
+
+#sizeTablePopup #popupInner {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+#sizeTablePopup #popupInner h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+    color: #000;
+    text-align: center;
+    font-family: arial, helvetica, sans-serif;
+}
+
+#sizeTablePopup #popupInner #tabs {
+    width: 770px;
+    border: 0;
+}
+
+#sizeTablePopup #popupInner #tabs ul {
+    background-image: none !important;
+    background-color: #fff;
+    border: 0 !important;
+}
+
+#sizeTablePopup #popupInner #tabs ul li a {
+    border: 0 !important;
+    font-size: 14px !important;
+}
+
+#sizeTablePopup #popupInner #tabs ul.tabsList li {
+    display: block;
+    float: left;
+    border: 1px #fff solid;
+    border-top: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    background-image: none !important;
+    background-color: #eee;
+}
+
+#sizeTablePopup #popupInner #tabs ul.tabsList li:first-child {
+    border-left: 1px #ccc solid;
+}
+
+#sizeTablePopup #popupInner #tabs ul.tabsList li.ui-tabs-active {
+    border-bottom: 1px #fff solid;
+    background-color: #fff !important;
+}
+
+#sizeTablePopup #popupInner #tabs ul.tabsList li.ui-tabs-active a {
+}
+
+#sizeTablePopup #popupInner #tabs ul.tabsList li a,
+#sizeTablePopup #popupInner #tabs ul.tabsList li.ui-tabs-active a {
+    display: block;
+    padding: 10px 15px;
+    border-top: 1px #fff solid;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #cccbcb solid;
+    border-left: 1px #fff solid;
+    outline: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+}
+
+#sizeTablePopup #popupInner #tabs ul.tabsList li.ui-tabs-active a {
+    border-color: #cccbcb;
+    border-bottom: 1px #fff solid;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent {
+    border: 1px #cccbcb solid;
+    padding: 15px;
+    margin-top: -1px;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .inner {
+    height: 430px;
+    width: 738px;
+    overflow: auto;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .inner h2 {
+    margin: 0 0 25px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px #d8d8d8 solid;
+    width: 700px;
+    font-weight: normal;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #505050;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .inner .row {
+    padding: 0 0 20px 0;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .inner .row .img {
+    display: block;
+    float: left;
+    width: 304px;
+    height: auto;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .inner .row .desc {
+    float: left;
+    width: 360px;
+    padding: 20px 0 0 20px;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .inner .row .desc h6 {
+    font-size: 14px;
+    margin: 0;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .inner .row .desc p {
+    font-size: 12px;
+    margin: 0 0 15px 0;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .table {
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .table table {
+    width: 700px;
+    margin: 30px 0 0 0;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .table table th {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #505050;
+    font-weight: normal;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .table table th,
+#sizeTablePopup #popupInner #tabs .tabContent .table table td {
+    padding: 10px 0;
+    border-bottom: 1px #cccbcb solid;
+    text-align: center;
+}
+
+#sizeTablePopup #popupInner #tabs .tabContent .table table td {
+    font-size: 12px;
+}

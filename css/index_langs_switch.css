@@ -1,0 +1,103 @@
+body * {
+	outline: none;	
+}
+
+#topBar {
+    overflow: hidden;
+}
+
+#topBar #langSwitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 61px;
+    height: 30px;
+    text-indent: -99999px;
+    background: transparent url(../images/langSwitch/topBannerSwitch.png) 40px -30px no-repeat;
+    background-size: 8px 90px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+#topBar #langSwitch i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: block;
+    width: 16px;
+    height: 12px;
+    margin-top: -6px;
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+}
+
+#topBar #langSwitch:hover {
+    background-color: #262626;
+}
+
+#topBar #langSwitch.active {
+    background-color: #000;
+    background-position: 40px 0;
+}
+
+#topBar #langSwitchList {
+    display: none;
+    position: absolute;
+    padding: 0;
+    top: 16px;
+    left: 0;
+    width: 60px;
+    z-index: 99999;
+    background: #000;
+    border-bottom: 1px #BCA474 solid;
+    border-left: 1px #BCA474 solid;
+}
+
+#topBar #langSwitchList * {
+    display: block;
+}
+
+#topBar #langSwitchList li a {
+    height: 30px;
+    text-indent: -99999px;
+    background-color: transparent;
+    background-position: 9px 50%;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -o-transform: translate(0px);
+}
+
+#topBar #langSwitch.ua i {
+    background-image: url(../images/langSwitch/langUa.png);
+}
+
+#topBar #langSwitchList li a:hover {
+    background-color: #262626;
+}
+
+#topBar #langSwitchList li.pl a {
+    background-image: url(../images/langSwitch/langPl.png);
+}
+
+#topBar #langSwitchList li.en a {
+    background-image: url(../images/langSwitch/langEn.png);
+}
+
+#topBar #langSwitchList li.cz a {
+    background-image: url(../images/langSwitch/langCz.png);
+}
+
+
+
